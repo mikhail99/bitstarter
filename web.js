@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 
     var data = fs.readFileSync('index.html');
 
-    responce.send(data);
+    response.send(data);
 
 });
 
