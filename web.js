@@ -8,10 +8,9 @@ app.use(express.logger());
 app.get('/', function(request, response) {
  
 
-   fs.readFileSync('index.html',function (err, data){
-     
-        responce.send(data);
-    });
+    var data = fs.readFileSync('index.html');
+
+    responce.send(data);
 
 });
 
