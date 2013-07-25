@@ -10,8 +10,8 @@ app.get('/', function(request, response) {
 
     var data = fs.readFileSync('index.html');
 
-    response.send(data);
-
+    response.writeHead(200, {'Content-Type': 'test/html'});
+    response.end(data);
 });
 
 var port = process.env.PORT || 5000;
