@@ -10,7 +10,7 @@ app.get('/', function(request, response) {
 
     var data = fs.readFileSync('index.html');
 
-    response.writeHead(200, {'Content-Type': 'test/html'});
+    response.writeHead(200, {'Content-Type': 'text/html'});
     response.end(data);
 });
 
